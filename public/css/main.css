@@ -4492,6 +4492,18 @@ details.faqDiv_1 summary::-webkit-details-marker {
   background-image: url('./public/images/Contact_Form/woman-writing-on-paper-3228878.png');
 }
 
+.bg-\[url\(\'\/public\/images\/Contact_Form\/01\'\)\] {
+  background-image: url('/public/images/Contact_Form/01');
+}
+
+.bg-\[url\(\'\/public\/images\/Contact_Form\/01\.\'\)\] {
+  background-image: url('/public/images/Contact_Form/01.');
+}
+
+.bg-\[url\(\'\/public\/images\/Contact_Form\/01\.png\'\)\] {
+  background-image: url('/public/images/Contact_Form/01.png');
+}
+
 .from-\[\#5239FA\] {
   --tw-gradient-from: #5239FA var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(82 57 250 / 0) var(--tw-gradient-to-position);
