@@ -4508,6 +4508,22 @@ details.faqDiv_1 summary::-webkit-details-marker {
   background-image: url('/images/Contact_Form/01.png');
 }
 
+.bg-\[url\(\'\.\/\/images\/Contact_Form\/01\.png\'\)\] {
+  background-image: url('.//images/Contact_Form/01.png');
+}
+
+.bg-\[url\(\'\.\/\62D\639\630\/images\/Contact_Form\/01\.png\'\)\] {
+  background-image: url('./حعذ/images/Contact_Form/01.png');
+}
+
+.bg-\[url\(\'\.\/images\/Contact_Form\/01\.png\'\)\] {
+  background-image: url('./images/Contact_Form/01.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/Contact_Form\/01\.png\'\)\] {
+  background-image: url('../images/Contact_Form/01.png');
+}
+
 .from-\[\#5239FA\] {
   --tw-gradient-from: #5239FA var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(82 57 250 / 0) var(--tw-gradient-to-position);
