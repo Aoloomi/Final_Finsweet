@@ -4488,6 +4488,10 @@ details.faqDiv_1 summary::-webkit-details-marker {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/public\/images\/Contact_Form\/woman-writing-on-paper-3228878\.png\'\)\] {
+  background-image: url('./public/images/Contact_Form/woman-writing-on-paper-3228878.png');
+}
+
 .from-\[\#5239FA\] {
   --tw-gradient-from: #5239FA var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(82 57 250 / 0) var(--tw-gradient-to-position);
