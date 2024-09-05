@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+
+      <header class="w-full h-fit bg-tintBlue">
+        <div
+          class="w-full spaceLeftRight h-[92px] flex flex-row justify-between"
+        >
+          <img
+            src="./public/images/header/nav/Logo.svg"
+            alt="Logo"
+            class="w-[122px] h-[24.71px] mt-8 md:mt-[28.04px] hover-effect cursor-pointer"
+          />
+
+          <nav
+            class="hidden md:flex w-auto ml-auto h-[29.91px] mt-[32.04px] space-x-3 md:space-x-6 lg:space-x-7 xl:space-x-8"
+          >
+            <a href="./index.html" class="menu_text-2">Home</a>
+            <a href="./about_us.html" class="menu_text-2">About us</a>
+            <a href="./features" class="menu_text-2">Features</a>
+            <a href="./price.html" class="menu_text-2">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_text-2 hidden sm:block"
+              >FAQ</a
+            >
+            <a href="./blog_page.html" class="menu_text-2 block">Blog</a>
+          </nav>
+
+          <a
+            href="./contact_us.html"
+            class="hidden md:flex md:w-[145px] lg:w-[165px] xl:w-[185px] h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] xl:h-[60px] mt-4 ml-4 sm:ml-[20px] md:ml-[30px] lg:ml-[40px] xl:ml-[50px] border-2 border-[#F4F6FC33] rounded-full bg-inherit items-center justify-center hover:border-[#FFFFFF] menu_text-1"
+            >Contact us</a
+          >
+
+          <!-- Hamburger Icon for mobile screens -->
+          <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <label
+              class="btn btn-circle swap swap-rotate bg-inherit border-white"
+            >
+              <!-- this hidden checkbox controls the state -->
+              <input id="hamburger-btn" type="checkbox" />
+
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                />
+              </svg>
+
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
+            </label>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div>
+
+          <!-- <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <button
+              id="hamburger-btn"
+              class="btn btn-ghost btn-circle transform transition-transform duration-200 ease-in-out"
+            >
+              <img
+                id="menu-icon"
+                src="./public/images/header/menu-icon.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </button>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div> -->
+        </div>
+      </header>
+      <nav
+        id="mobile-menu"
+        class="hidden flex-col space-y-2 px-8 pb-4 bg-tintBlue md:hidden"
+      >
+        <a href="./index.html" class="headerMenuStyle text-white">
+          <div>Home</div>
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./about_us.html" class="headerMenuStyle">
+          About us
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./features" class="headerMenuStyle">
+          Features
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./price.html" class="headerMenuStyle">
+          Pricing
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./privacy_policy.html" class="headerMenuStyle">
+          FAQ
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./blog_page.html" class="headerMenuStyle">
+          Blog
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a
+          href="./contact_us.html"
+          class="headerMenuStyle font-[Poppins] font-semibold text-[#1B1C2B] mt-4 px-4 border-[2px] w-fit bg-[#FCD980] hover:bg-tintBlue border-[#8d851b] hover:border-red-500"
+        >
+          Contact us</a
+        >
+      </nav>
+      <!-- End Header -->
+
+      <div
+        class="w-full h-fit px-4 sm:px-10 lg:px-20 xl:px-32 2xl:px-40 pt-16 sm:pt-24 md:pt-32 flex flex-col items-center"
+      >
+        <h2 class="heading-2 lightDark pb-4 text-center">Our Pricing Plans</h2>
+        <p
+          class="paragraph w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[562px] text-center lightDark opacity-70 pb-16"
+        >
+          When you’re ready to go beyond prototyping in Figma, Webflow is ready
+          to help you bring your designs to life — without coding them.
+        </p>
+        <div
+          class="w-full flex flex-col lg:flex-row justify-between space-y-4 lg:space-y-0 lg:space-x-6"
+        >
+          <!-- Pricing Plan 1 -->
+          <div
+            class="w-full lg:w-[30%] lg:h-[900px] 2xl:h-[745px] bg-[#F4F6FC] flex flex-col py-10 sm:py-16 rounded-[12px] px-8 sm:px-12 dark:bg-[#71b0c4] items-center lg:items-start hover-effect"
+          >
+            <div class="flex flex-row space-x-3 items-center pb-5">
+              <h3 class="heading-3 text-[#282938]">$299</h3>
+              <p class="paragraph text-[#2405F2]">Per Design</p>
+            </div>
+            <h6 class="heading-6 text-[#282938] pb-2">Landing Page</h6>
+            <p class="paragraph lightDark opacity-70">
+              When you’re ready to go beyond prototyping in Figma,
+            </p>
+            <div class="w-full h-fit py-20 flex flex-col space-y-5">
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938]">All limited links</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938]">Own analytics platform</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938]">Chat support</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/04.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938] opacity-70">
+                  Optimize hashtags
+                </p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/04.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938] opacity-70">
+                  Unlimited users
+                </p>
+              </div>
+            </div>
+            <div class="w-full flex justify-center">
+              <a
+                href="#"
+                class="button_text text-[#F4F6FC] text-center bg-[#282938] py-3 px-6 rounded-full hover-effect"
+                >Get started</a
+              >
+            </div>
+          </div>
+
+          <!-- Pricing Plan 2 -->
+          <div
+            class="w-full lg:w-[30%] lg:h-[900px] 2xl:h-[745px] bg-[#1C1E53] flex flex-col py-10 sm:py-16 rounded-[12px] px-8 sm:px-12 items-center lg:items-start hover-effect"
+          >
+            <div class="flex flex-row space-x-3 items-center pb-5">
+              <h3 class="heading-3 text-white">$399</h3>
+              <p class="paragraph text-[#FCD980]">Multi Design</p>
+            </div>
+            <h6 class="heading-6 text-white pb-2">Website Page</h6>
+            <p class="paragraph text-white opacity-70">
+              When you’re ready to go beyond prototyping in Figma, Webflow’s
+              ready to help.
+            </p>
+            <div class="w-full h-fit py-20 flex flex-col space-y-5">
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-white">All limited links</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-white">Own analytics platform</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-white">Chat support</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-white opacity-70">Optimize hashtags</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-white opacity-70">Unlimited users</p>
+              </div>
+            </div>
+            <div class="w-full flex justify-center">
+              <a
+                href="#"
+                class="button_text text-[#282938] text-center bg-[#FCD980] py-3 px-6 rounded-full hover-effect"
+                >Get started</a
+              >
+            </div>
+          </div>
+
+          <!-- Pricing Plan 3 -->
+          <div
+            class="w-full lg:w-[30%] lg:h-[900px] 2xl:h-[745px] bg-[#F4F6FC] flex flex-col py-10 sm:py-16 rounded-[12px] px-8 sm:px-12 dark:bg-[#71b0c4] items-center lg:items-start hover-effect"
+          >
+            <div class="flex flex-row space-x-3 items-center pb-5">
+              <h3 class="heading-3 text-[#282938]">$499+</h3>
+              <p class="paragraph text-[#2405F2]">Per Design</p>
+            </div>
+            <h6 class="heading-6 text-[#282938] pb-2">Complex Project</h6>
+            <p class="paragraph lightDark opacity-70">
+              When you’re ready to go beyond prototyping in Figma,
+            </p>
+            <div
+              class="w-full h-fit pt-[44px] pb-[65px] flex flex-col space-y-5"
+            >
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938]">All limited links</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938]">Own analytics platform</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938]">Chat support</p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938] opacity-70">
+                  Optimize hashtags
+                </p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938] opacity-70">
+                  Unlimited users
+                </p>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                <img
+                  src="./public/images/price/03.svg"
+                  alt=""
+                  class="w-[26px] h-[18px]"
+                />
+                <p class="paragraph text-[#282938] opacity-70">
+                  Assist and Help
+                </p>
+              </div>
+            </div>
+            <div class="w-full flex justify-center">
+              <a
+                href="#"
+                class="button_text text-[#F4F6FC] text-center bg-[#282938] py-3 px-6 rounded-full hover-effect"
+                >Get started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing -->
+
+      <!-- Question Section -->
+      <div
+        class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 w-full h-fit lg:fit px-0 sm:px-6 xl:px-40 py-32"
+      >
+        <div
+          class="flex flex-col space-y-4 w-full lg:w-[50%] h-auto lg:h-[160px]"
+        >
+          <div
+            class="w-full lg:w-[320px] h-auto lg:h-[112px] heading-3 lightDark text-center lg:text-left"
+          >
+            Frequently asked questions
+          </div>
+          <a
+            href="./contact_us.html"
+            class="w-full lg:w-[220px] h-auto lg:h-[32px] font-[Poppins] lightDark text-[#2405F2] dark:text-[#FCD980] hover:font-bold text-[18px] leading-8 text-center lg:text-left hover-effect_2"
+            >Contact us for more info</a
+          >
+        </div>
+
+        <div class="flex flex-col space-y-8 w-full h-auto lg:h-fit">
+          <div class="collapse collapse-plus lightDark">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">01</span> How
+              much time does it take?
+            </div>
+            <div class="collapse-content h-fit">
+              <p
+                class="paragraph lightDark w-[80%] h-auto lg:h-fit opacity-85 pl-[45px] lg:pl-[90px] text-justify md:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="collapse collapse-plus lightDark">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">02</span>
+              What is your class naming convention?
+            </div>
+            <div class="collapse-content h-fit">
+              <p
+                class="paragraph lightDark w-[80%] h-auto lg:h-fit opacity-85 pl-[45px] lg:pl-[90px] text-justify md:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="collapse collapse-plus lightDark">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">03</span> How
+              do you communicate?
+            </div>
+            <div class="collapse-content h-fit">
+              <p
+                class="paragraph lightDark w-[80%] h-auto lg:h-fit opacity-85 pl-[45px] lg:pl-[90px] text-justify md:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="collapse collapse-plus lightDark">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">04</span> I
+              have a bigger project. Can you handle it?
+            </div>
+            <div class="collapse-content h-fit">
+              <p
+                class="paragraph lightDark w-[80%] h-auto lg:h-fit opacity-85 pl-[45px] lg:pl-[90px] text-justify md:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="collapse collapse-plus lightDark">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">05</span>What
+              is your class naming convention?
+            </div>
+            <div class="collapse-content h-fit">
+              <p
+                class="paragraph lightDark w-[80%] h-auto lg:h-fit opacity-85 pl-[45px] lg:pl-[90px] text-justify md:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <hr class="w-full bg-[#ECECF1]" />
+        </div>
+      </div>
+      <!-- End Question Section -->
+
+      <!-- Footer -->
+      <footer class="w-full h-fit flex flex-col ">
+        <div
+          class="flex flex-col w-full h-fit pt-12 xl:pt-24 px-6 xl:px-40 bg-[#1C1E53]"
+        >
+          <div
+            class="w-full h-auto flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-[260px] items-start justify-between"
+          >
+            <div class="w-full md:w-[400px] flex flex-col space-y-6">
+              <img
+                src="./public/images/header/nav/Logo.svg"
+                alt="Logo"
+                class="w-40 h-8"
+              />
+              <p class="paragraph w-full lg:w-[300px] xl:w-[399px] text-white">
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+            </div>
+            <div
+              class="w-full lg:w-[400px] flex flex-col space-y-4 md:space-y-[14px] justify-between"
+            >
+              <h2 class="heading-2 text-white">Lets Talk!</h2>
+              <p class="paragraph w-full lg:w-[399px] text-[#C9CBDA]">
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div class="flex flex-row space-x-6 md:space-x-[27px] items-end">
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Facebook/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Twitter/Negative.svg "
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Instagram/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/LinkedIn/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[517px] bg-[#FCD980] mt-8 md:mt-4">
+            <div
+              class="w-full h-auto flex flex-col md:flex-row px-6 md:px-[37px] py-4 space-y-4 md:space-y-0 md:space-x-10"
+            >
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Email me at
+                </div>
+                <p class="paragraph text-[#282938]">contact@website.com</p>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Call us
+                </div>
+                <p class="paragraph text-[#282938]">0927 6277 28525</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[92px] flex flex-col space-y-2 lg:space-y-0 lg:flex-row items-center px-6 xl:px-40 py-2 lg:py-0 md:justify-between"
+        >
+          <p
+            class="hidden lg:block paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+          <div class="flex flex-row space-x-6 md:space-x-7 mt-2 md:mt-0">
+            <a href="./index.html" class="menu_style">Home</a>
+            <a href="./about_us.html" class="menu_style">About us</a>
+            <a href="./features" class="menu_style">Features</a>
+            <a href="./price.html" class="menu_style">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_style">FAQ</a>
+            <a href="./blog_page.html" class="menu_style">Blog</a>
+          </div>
+          <p
+            class="lg:hidden paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+      </footer>
+
+      <!-- End Footer -->
+    </div>
+  </body>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenClose = document.getElementById("menu-close-open");
+    const menuIcon = document.getElementById("menu-icon");
+
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+
+      if (!mobileMenu.classList.contains("hidden")) {
+        menuOpenClose.textContent = "Close";
+        menuIcon.src = "./public/images/header/close-icon.svg";
+        hamburgerBtn.classList.add("rotate-90");
+      } else {
+        menuOpenClose.textContent = "Menu";
+        menuIcon.src = "./public/images/header/menu-icon.svg";
+        hamburgerBtn.classList.remove("rotate-90");
+      }
+    });
+  </script>
+</html>

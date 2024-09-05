@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features</title>
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+
+      <header class="w-full h-fit bg-tintBlue">
+        <div
+          class="w-full spaceLeftRight h-[92px] flex flex-row justify-between"
+        >
+          <img
+            src="./public/images/header/nav/Logo.svg"
+            alt="Logo"
+            class="w-[122px] h-[24.71px] mt-8 md:mt-[28.04px] hover-effect cursor-pointer"
+          />
+
+          <nav
+            class="hidden md:flex w-auto ml-auto h-[29.91px] mt-[32.04px] space-x-3 md:space-x-6 lg:space-x-7 xl:space-x-8"
+          >
+            <a href="./index.html" class="menu_text-2">Home</a>
+            <a href="./about_us.html" class="menu_text-2">About us</a>
+            <a href="./features" class="menu_text-2">Features</a>
+            <a href="./price.html" class="menu_text-2">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_text-2 hidden sm:block"
+              >FAQ</a
+            >
+            <a href="./blog_page.html" class="menu_text-2 block">Blog</a>
+          </nav>
+
+          <a
+            href="./contact_us.html"
+            class="hidden md:flex md:w-[145px] lg:w-[165px] xl:w-[185px] h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] xl:h-[60px] mt-4 ml-4 sm:ml-[20px] md:ml-[30px] lg:ml-[40px] xl:ml-[50px] border-2 border-[#F4F6FC33] rounded-full bg-inherit items-center justify-center hover:border-[#FFFFFF] menu_text-1"
+            >Contact us</a
+          >
+
+          <!-- Hamburger Icon for mobile screens -->
+          <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <label
+              class="btn btn-circle swap swap-rotate bg-inherit border-white"
+            >
+              <!-- this hidden checkbox controls the state -->
+              <input id="hamburger-btn" type="checkbox" />
+
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                />
+              </svg>
+
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
+            </label>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div>
+
+          <!-- <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <button
+              id="hamburger-btn"
+              class="btn btn-ghost btn-circle transform transition-transform duration-200 ease-in-out"
+            >
+              <img
+                id="menu-icon"
+                src="./public/images/header/menu-icon.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </button>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div> -->
+        </div>
+      </header>
+      <nav
+        id="mobile-menu"
+        class="hidden flex-col space-y-2 px-8 pb-4 bg-tintBlue md:hidden"
+      >
+        <a href="./index.html" class="headerMenuStyle text-white">
+          <div>Home</div>
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./about_us.html" class="headerMenuStyle">
+          About us
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./features" class="headerMenuStyle">
+          Features
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./price.html" class="headerMenuStyle">
+          Pricing
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./privacy_policy.html" class="headerMenuStyle">
+          FAQ
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./blog_page.html" class="headerMenuStyle">
+          Blog
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a
+          href="./contact_us.html"
+          class="headerMenuStyle font-[Poppins] font-semibold text-[#1B1C2B] mt-4 px-4 border-[2px] w-fit bg-[#FCD980] hover:bg-tintBlue border-[#8d851b] hover:border-red-500"
+        >
+          Contact us</a
+        >
+      </nav>
+      <!-- End Header -->
+
+      <!-- Home Hero -->
+      <div
+        class="w-full h-fit lg:h-[668px] bg-tintBlue flex flex-col lg:flex-row-reverse flex-nowrap items-center justify-center lg:justify-between px-0 lg:px-40 py-8 lg:py-24"
+      >
+        <div class="flex justify-center lg:justify-end w-full h-fit">
+          <img src="./public/images/feature_page/01.svg" alt="Illustration" />
+        </div>
+        <div
+          class="w-[500px] lg:w-[582px] h-[414px] flex flex-col flex-nowrap space-y-1 items-center md:items-start"
+        >
+          <div class="h-[302px] flex flex-col space-y-5">
+            <h1
+              class="h-[150px] heading-1 text-[#FFFFFF] text-center lg:text-left"
+            >
+              All the features you need
+            </h1>
+            <p
+              class="w-[470px] lg:w-[562px] h-[56px] paragraph text-[#BBBBCB] text-center lg:text-left"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua..
+            </p>
+          </div>
+          <div class="w-full h-[64px] flex flex-row items-center space-x-10 justify-center lg:justify-start">
+            <a
+              href="./work.html"
+              class="w-[230px] h-[64px] flex bg-[#FCD980] rounded-full button_text items-center justify-center hover:font-bold hover-effect"
+              >View our work</a
+            >
+          </div>
+        </div>
+
+        
+      </div>
+      <!-- End Home Hero -->
+
+      <!-- Benefits -->
+      <div class="w-full h-fit px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-16 sm:py-24 md:py-32 flex flex-col space-y-12 items-center">
+        <div class="flex flex-col xl:flex-row w-full h-fit space-y-8 xl:space-y-0 xl:space-x-[90px] items-center justify-between pb-8">
+          <div class="flex flex-col text-center xl:text-left pl-2">
+            <h3 class="heading-3 lightDark">100.000+</h3>
+            <p class="paragraph lightDark opacity-70">Finsweet Users</p>
+          </div>
+          
+          <div class="grid grid-rows-2 md:grid-rows-1 grid-cols-3 md:grid-cols-5 gap-8 w-full">
+
+            <img src="./public/images/about_us/08.svg" alt="">
+            <img src="./public/images/about_us/09.svg" alt="">
+            <img src="./public/images/about_us/10.svg" alt="">
+            <img src="./public/images/about_us/11.svg" alt="">
+            <img src="./public/images/about_us/12.svg" alt="">
+          </div>
+        </div>
+
+        <h2 class="w-full md:w-[630px] h-fit heading-2 lightDark text-center">The benefits of working with us</h2>
+        
+        <div class="w-full h-fit flex flex-col xl:flex-row justify-between space-y-8 xl:space-y-0 xl:space-x-8">
+          <div class="benefitDiv">
+            <img src="./public/images/about_us/05.svg" alt="" class="benefitImg">
+            <h6 class="benefitH6">Customize with ease</h6>
+            <p class="benefitP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+          </div>
+          
+          <div class="benefitDiv">
+            <img src="./public/images/about_us/06.svg" alt="" class="benefitImg">
+            <h6 class="benefitH6">Perfectly Responsive</h6>
+            <p class="benefitP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+          </div>
+          
+          <div class="benefitDiv">
+            <img src="./public/images/about_us/07.svg" alt="" class="benefitImg">
+            <h6 class="benefitH6">Friendly Support</h6>
+            <p class="benefitP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+          </div>
+        </div>        
+        
+      </div>
+      <!-- End Benefits -->
+
+
+      <!-- Best In Class -->
+      <div class="w-full px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 pb-12 sm:pb-24  h-fit flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 dark:text-white">
+        <div class="w-full lg:w-[45%] h-fit flex flex-col space-y-1 text-center md:text-left">
+          <p class="font-[Poppins] text-[18px] lightDark text-center lg:text-left">Use Client-first</p>
+          <h3 class="heading-3 lightDark text-center lg:text-left">Top agencies and freelancers around the world use Client-first </h3>
+          <p class="w-full xl:w-[484px] paragraph lightDark opacity-70 pt-8 text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        </div>
+        <img src="./public/images/feature_page/01.jpeg" alt="" class="w-full lg:w-[45%] h-auto hover-effect">
+      </div>
+      
+      <!-- End Best In Class -->
+
+      <!-- Free Revisions -->
+      <div class="w-full px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-12 sm:py-24  h-fit flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 bg-[#F4F6FC] dark:text-white dark:bg-[#386775] ">
+        <img src="./public/images/feature_page/02.jpeg" alt="" class="hidden lg:block w-full lg:w-[45%] h-auto hover-effect">
+        <div class="w-full lg:w-[40%] h-fit flex flex-col space-y-1 text-center md:text-left">
+          <p class="font-[Poppins] text-[18px] lightDark text-center lg:text-left">Free Revision Rounds</p>
+          <h3 class="heading-3 lightDark text-center lg:text-left">Get free Revisions and one week of free maintenance</h3>
+          <p class="w-full xl:w-[484px] paragraph lightDark opacity-70 pt-8 text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <img src="./public/images/feature_page/02.jpeg" alt="" class="block lg:hidden w-full lg:w-[45%] h-auto hover-effect">
+
+        
+      </div>
+      
+      <!-- End Free Revisions -->
+
+      <!-- Support -->
+      <div class="w-full px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-16 sm:py-24 md:pb-32 h-fit flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 dark:text-white">
+        <div class="w-full lg:w-[45%] h-fit flex flex-col space-y-2 text-center md:text-left">
+          <p class="font-[Poppins] text-[18px] lightDark text-center lg:text-left">24/7 Support</p>
+          <h3 class="heading-3 lightDark text-center lg:text-left">Working with us, you will be getting 24/7 priority support</h3>
+          <p class="w-full xl:w-[484px] paragraph lightDark opacity-70 pt-8 text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <img src="./public/images/feature_page/03.jpeg" alt="" class="w-full lg:w-[45%] h-auto hover-effect">
+      </div>
+      
+      <!-- End Support -->
+
+      <!-- Quick Deliver -->
+      <div class="w-full px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-12 sm:py-24 h-fit flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 bg-[#FFFBF2] dark:text-white dark:bg-[#386775] ">
+        <img src="./public/images/feature_page/04.jpg" alt="" class="hidden lg:block w-full lg:w-[45%] h-auto hover-effect">
+        <div class="w-full lg:w-[40%] h-fit flex flex-col space-y-1 text-center md:text-left">
+          <p class="font-[Poppins] text-[18px] lightDark text-center lg:text-left">Quick Delivery</p>
+          <h3 class="heading-3 lightDark text-center lg:text-left">Guranteed 1 week delivery for standard five pager website</h3>
+          <p class="w-full xl:w-[484px] paragraph lightDark opacity-70 pt-8 text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <img src="./public/images/feature_page/04.jpg" alt="" class="block lg:hidden w-full lg:w-[45%] h-auto hover-effect">        
+      </div>
+      
+      <!-- End Quick Deliver -->
+
+      <!-- FAQ -->
+      <div
+        class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 w-full h-fit lg:fit px-0 sm:px-6 xl:px-40 py-32"
+      >
+        <div
+          class="flex flex-col space-y-4 w-full lg:w-[50%] h-auto lg:h-[160px]"
+        >
+          <div
+            class="w-full lg:w-[320px] h-auto lg:h-[112px] heading-3 lightDark text-center lg:text-left"
+          >
+            Frequently asked questions
+          </div>
+          <a
+            href="./contact_us.html"
+            class="w-full lg:w-[220px] h-auto lg:h-[32px] font-[Poppins] lightDark text-[#2405F2] dark:text-[#FCD980] hover:font-bold text-[18px] leading-8 text-center lg:text-left hover-effect_2"
+            >Contact us for more info</a
+          >
+        </div>
+
+        <div class="flex flex-col space-y-8 w-full h-auto lg:h-fit">
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">01</span> How much time does it take?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">02</span> What is your class naming
+              convention?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">03</span> How do you communicate?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">04</span> I have a bigger project. Can you
+              handle it?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">05</span>What is your class naming
+              convention?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End FAQ -->
+
+      <!-- Footer -->
+      <footer class="w-full h-fit flex flex-col">
+        <div
+          class="flex flex-col w-full h-fit pt-12 xl:pt-24 px-6 xl:px-40 bg-[#1C1E53]"
+        >
+          <div
+            class="w-full h-auto flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-[260px] items-start justify-between"
+          >
+            <div class="w-full md:w-[400px] flex flex-col space-y-6">
+              <img
+                src="./public/images/header/nav/Logo.svg"
+                alt="Logo"
+                class="w-40 h-8"
+              />
+              <p class="paragraph w-full lg:w-[300px] xl:w-[399px] text-white">
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+            </div>
+            <div
+              class="w-full lg:w-[400px] flex flex-col space-y-4 md:space-y-[14px] justify-between"
+            >
+              <h2 class="heading-2 text-white">Lets Talk!</h2>
+              <p class="paragraph w-full lg:w-[399px] text-[#C9CBDA]">
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div class="flex flex-row space-x-6 md:space-x-[27px] items-end">
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Facebook/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Twitter/Negative.svg "
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Instagram/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/LinkedIn/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[517px] bg-[#FCD980] mt-8 md:mt-4">
+            <div
+              class="w-full h-auto flex flex-col md:flex-row px-6 md:px-[37px] py-4 space-y-4 md:space-y-0 md:space-x-10"
+            >
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Email me at
+                </div>
+                <p class="paragraph text-[#282938]">contact@website.com</p>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Call us
+                </div>
+                <p class="paragraph text-[#282938]">0927 6277 28525</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[92px] flex flex-col space-y-2 lg:space-y-0 lg:flex-row items-center px-6 xl:px-40 py-2 lg:py-0 md:justify-between"
+        >
+          <p
+            class="hidden lg:block paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+          <div class="flex flex-row space-x-6 md:space-x-7 mt-2 md:mt-0">
+            <a href="./index.html" class="menu_style">Home</a>
+            <a href="./about_us.html" class="menu_style">About us</a>
+            <a href="./features" class="menu_style">Features</a>
+            <a href="./price.html" class="menu_style">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_style">FAQ</a>
+            <a href="./blog_page.html" class="menu_style">Blog</a>
+          </div>
+          <p
+            class="lg:hidden paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+      </footer>
+
+      <!-- End Footer -->
+    </div>
+  </body>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenClose = document.getElementById("menu-close-open");
+
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+
+      if (!mobileMenu.classList.contains("hidden")) {
+        menuOpenClose.textContent = "Close";
+      } else {
+        menuOpenClose.textContent = "Menu";
+      }
+    });
+  </script>
+</html>

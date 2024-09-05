@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+
+      <header class="w-full h-fit flex flex-col bg-tintBlue">
+        <div
+          class="w-full spaceLeftRight h-[92px] flex flex-row justify-between"
+        >
+          <img
+            src="./public/images/header/nav/Logo.svg"
+            alt="Logo"
+            class="w-[122px] h-[24.71px] mt-8 md:mt-[28.04px] hover-effect cursor-pointer"
+          />
+
+          <nav
+            class="hidden md:flex w-auto ml-auto h-[29.91px] mt-[32.04px] space-x-3 md:space-x-6 lg:space-x-7 xl:space-x-8"
+          >
+            <a href="./index.html" class="menu_text-2">Home</a>
+            <a href="./about_us.html" class="menu_text-2">About us</a>
+            <a href="./features" class="menu_text-2">Features</a>
+            <a href="./price.html" class="menu_text-2">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_text-2 hidden sm:block"
+              >FAQ</a
+            >
+            <a href="./blog_page.html" class="menu_text-2 block">Blog</a>
+          </nav>
+
+          <a
+            href="./contact_us.html"
+            class="hidden md:flex md:w-[145px] lg:w-[165px] xl:w-[185px] h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] xl:h-[60px] mt-4 ml-4 sm:ml-[20px] md:ml-[30px] lg:ml-[40px] xl:ml-[50px] border-2 border-[#F4F6FC33] rounded-full bg-inherit items-center justify-center hover:border-[#FFFFFF] menu_text-1"
+            >Contact us</a
+          >
+
+          <!-- Hamburger Icon for mobile screens -->
+          <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <label
+              class="btn btn-circle swap swap-rotate bg-inherit border-white"
+            >
+              <!-- this hidden checkbox controls the state -->
+              <input id="hamburger-btn" type="checkbox" />
+
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                />
+              </svg>
+
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
+            </label>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div>
+
+          <!-- <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <button
+              id="hamburger-btn"
+              class="btn btn-ghost btn-circle transform transition-transform duration-200 ease-in-out"
+            >
+              <img
+                id="menu-icon"
+                src="./public/images/header/menu-icon.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </button>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div> -->
+        </div>
+      </header>
+      <nav
+        id="mobile-menu"
+        class="hidden flex-col space-y-2 px-8 pb-4 bg-tintBlue md:hidden"
+      >
+        <a href="./index.html" class="headerMenuStyle text-white">
+          <div>Home</div>
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./about_us.html" class="headerMenuStyle">
+          About us
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./features" class="headerMenuStyle">
+          Features
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./price.html" class="headerMenuStyle">
+          Pricing
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./privacy_policy.html" class="headerMenuStyle">
+          FAQ
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./blog_page.html" class="headerMenuStyle">
+          Blog
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a
+          href="./contact_us.html"
+          class="headerMenuStyle font-[Poppins] font-semibold text-[#1B1C2B] mt-4 px-4 border-[2px] w-fit bg-[#FCD980] hover:bg-tintBlue border-[#8d851b] hover:border-red-500"
+        >
+          Contact us</a
+        >
+      </nav>
+      <!-- End Header -->
+
+      <!-- Home Hero -->
+      <div
+        class="w-full h-fit lg:h-[668px] bg-tintBlue flex flex-col lg:flex-row-reverse flex-nowrap items-center justify-center lg:justify-between px-0 lg:px-40 py-8 lg:py-24"
+      >       
+        <div class="flex justify-center lg:justify-end w-full h-[361.12px]">
+          <img
+            src="./public/images/Home Hero/Illustration.svg"
+            alt="Illustration"
+          />
+        </div> 
+        <div
+          class="w-[500px] lg:w-[582px] h-[414px] flex flex-col flex-nowrap space-y-11"
+        >
+          <div class="h-[302px] flex flex-col space-y-5">
+            <h1
+              class="h-[222px] heading-1 text-[#FFFFFF] text-center lg:text-left"
+            >
+              Building stellar websites for early startups
+            </h1>
+            <p
+              class="w-[470px] lg:w-[562px] h-[56px] paragraph text-[#BBBBCB] text-center lg:text-left"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="h-[64px] flex flex-row items-center space-x-10 justify-center lg:justify-start">
+            <a
+              href="./work.html"
+              class="w-[230px] h-[64px] flex bg-[#FCD980] rounded-full button_text items-center justify-center hover:font-bold hover-effect"
+              >View our work</a
+            >
+            <a
+              href="./price.html"
+              class="w-[138px] h-[28px] flex flex-row space-x-4 hover-effect_2 "
+            >
+              <div
+                class="w-[98px] menu_text-1_nonehover hover:font-bold"
+              >
+                View Pricing
+              </div>
+              <img
+                src="./public/images/Home Hero/Arrow 1.svg"
+                class="w-[24px]"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+      <!-- End Home Hero -->
+
+      <!-- This is how it work -->
+      <div
+        class="w-full h-fit lg:h-[661px] spaceLeftRight flex flex-col items-center lg:items-start lg:flex-row xl:space-x-[200px] 2xl:space-x-[350px] py-24 lg:py-[128px] bg-[#F4F6FC] dark:bg-[#386775]"
+      >
+        <div class="lg:w-[490px] h-auto space-y-3 mb-8 lg:mb-0">
+          <div class="h-[64px] heading-2 lightDark text-center lg:text-left">
+            How we work
+          </div>
+          <p
+            class="w-[405px] h-auto paragraph text-[#5b5b5b] dark:text-white dark:opacity-70 text-center lg:text-left"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <a
+            href="#"
+            class="w-auto h-[32px] flex flex-row space-x-3 justify-center lg:justify-start hover-effect_2"
+          >
+            <div
+              class="font-[Poppins] text-lg leading-8 font-medium text-center lg:text-left text-[#2405F2] dark:text-[#FCD980] hover:font-bold"
+            >
+              Get in touch with us
+            </div>
+            <img
+              src="./public/images/our_work/Arrow 2 (2).svg"
+              alt="Arrow-2"
+              class="w-[24px] hidden dark:block"
+            />
+            <img
+              src="./public/images/How it work/Arrow 2.svg"
+              alt="Arrow-2"
+              class="w-[24px] dark:hidden"
+            />
+          </a>
+        </div>
+        <div
+          class="w-full lg:w-[656px] h-[405px] grid grid-cols-2 grid-rows-2 gap-8 items-center"
+        >
+          <div class="howWorkDiv">
+            <img
+              src="./public/images/How it work/pointer 1.svg"
+              alt="01"
+              class="w-[50px] h-[50px]"
+            />
+            <h5 class="heading-5 lightDark">Strategy</h5>
+            <p class="howWorkParagraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+          <div class="howWorkDiv">
+            <img
+              src="./public/images/How it work/pointer 2.svg"
+              alt="01"
+              class="w-[50px] h-[50px]"
+            />
+            <h5 class="heading-5 lightDark">Wireframing</h5>
+            <p class="howWorkParagraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+          <div class="howWorkDiv_2">
+            <img
+              src="./public/images/How it work/pointer 3.svg"
+              alt="01"
+              class="w-[50px] h-[50px]"
+            />
+            <h5 class="heading-5 lightDark">Design</h5>
+            <p class="howWorkParagraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+          <div class="howWorkDiv_2">
+            <img
+              src="./public/images/How it work/pointer 4.svg"
+              alt="01"
+              class="w-[50px] h-[50px]"
+            />
+            <h5 class="heading-5 lightDark">Strategy</h5>
+            <p class="howWorkParagraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End This is how it work -->
+
+      <!-- Our work -->
+      <div class="px-6 lg:px-40 py-32 lg:pt-32 lg:pb-0 w-full h-fit lg:h-fit">
+        <div class="w-full h-fit lg:h-[928px] flex flex-col">
+          <div
+            class="w-full h-32 flex flex-col lg:flex-row lg:justify-between items-center lg:items-start bg-white dark:bg-[#8889ac]"
+          >
+            <h2 class="heading-2 lightDark">View our projects</h2>
+            <a
+              href="./work.html"
+              class="flex flex-row w-[123px] h-[28px] space-x-4 items-center lg:pt-8 hover-effect_2"
+            >
+              <div
+                class="menu_text-1_nonehover text-[#282938] dark:text-[#FCD980] font-bold"
+              >
+                View More
+              </div>
+              <img
+              src="./public/images/our_work/Arrow 2 (2).svg"
+              alt="Arrow-2"
+              class="w-[24px] hidden dark:block"
+            />
+            <img
+            src="./public/images/our_work/Arrow 1 (2).svg"
+            alt="Arrow-2"
+              class="w-[24px] dark:hidden"
+            />
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <!-- کارت بزرگ در سمت چپ -->
+            <div
+              class="relative group col-span-1 lg:col-span-2 row-span-2 h-[320px] lg:h-[680px] bg-cover bg-center overflow-hidden"
+            >
+              <img
+                src="./public/images/our_work/01.jpeg"
+                alt="Project 1 Image"
+                class="w-full h-full"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-[rgba(28,30,83,0.42)] to-[rgba(28,30,83,1)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              ></div>
+              <div
+                class="absolute inset-0 flex items-end justify-start p-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+                <div class="">
+                  <h2
+                    class="w-[313px] text-white text-xl lg:text-2xl font-bold mb-2 font-[Poppins]"
+                  >
+                    Workhub office Webflow Webflow Design
+                  </h2>
+                  <p
+                    class="w-[293px] text-white text-sm lg:text-md mb-4 font-[Poppins] opacity-70"
+                  >
+                    Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                    aliquam
+                  </p>
+                  <a
+                    href="#"
+                    class="text-[#FCD980] text-md font-medium inline-flex items-center hover:font-bold"
+                  >
+                    View project
+                    <span class="ml-2"
+                      ><img
+                        src="./public/images/our_work/Arrow 2 (2).svg"
+                        alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- کارت بالا سمت راست -->
+            <div
+              class="relative group col-span-1 h-[320px] lg:h-[320px] bg-cover bg-center overflow-hidden"
+            >
+              <img
+                src="./public/images/our_work/02.jpeg"
+                alt="Project 2 Image"
+                class="w-full h-full"
+              />
+              <div class="cardDiv_1"></div>
+              <div class="cardDiv_2">
+                <div class="">
+                  <h2 class="cardH2">Unisaas Website Design</h2>
+                  <a href="#" class="cardLink">
+                    View portfolio
+                    <span class="ml-2"
+                      ><img
+                        src="./public/images/our_work/Arrow 2 (2).svg"
+                        alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- کارت پایین سمت راست -->
+            <div
+              class="relative group col-span-1 h-[320px] lg:h-[320px] bg-cover bg-center overflow-hidden"
+            >
+              <img
+                src="./public/images/our_work/03.jpeg"
+                alt="Project 3 Image"
+                class="w-full h-full"
+              />
+              <div class="cardDiv_1"></div>
+              <div class="cardDiv_2">
+                <div class="">
+                  <h2 class="cardH2">Unisaas Website Design</h2>
+                  <a href="#" class="cardLink">
+                    View portfolio
+                    <span class="ml-2"
+                      ><img
+                        src="./public/images/our_work/Arrow 2 (2).svg"
+                        alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Our work -->
+
+      <!-- Features -->
+      <div
+        class="flex flex-col space-y-12 items-center w-full bg-[#F4F6FC] dark:bg-[#386775] px-4  sm:px-16 py-20 md:px-32 md:py-32 2xl:px-40 lg:h-fit"
+      >
+        <div
+          class="flex flex-col items-center w-full sm:w-[630px] h-auto sm:h-[232px] text-center"
+        >
+          <div
+            class="menu_text-1_nonehover lightDark text-center w-full h-auto sm:w-[419px] sm:h-[28px]"
+          >
+            Features
+          </div>
+          <h2
+            class="heading-2 lightDark text-center w-full h-auto sm:w-[630px] sm:h-[192px]"
+          >
+            Design that solves problems, one product at a time
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-8 lg:gap-y-6"
+        >
+          <div class="featureDiv">
+            <img
+              src="./public/images/features/Icon.svg"
+              alt="icon"
+              class="w-[32px] h-[27.92px]"
+            />
+            <h6 class="featureH6">Uses Client First</h6>
+            <p class="featurePragraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div class="featureDiv">
+            <img
+              src="./public/images/features/Icon (1).svg"
+              alt="icon"
+              class="w-[32px] h-[27.92px]"
+            />
+            <h6 class="featureH6">Two Free Revision Round</h6>
+            <p class="featurePragraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div class="featureDiv">
+            <img
+              src="./public/images/features/Icon (2).svg"
+              alt="icon"
+              class="w-[32px] h-[27.92px]"
+            />
+            <h6 class="featureH6">Template Customization</h6>
+            <p class="featurePragraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div class="featureDiv">
+            <img
+              src="./public/images/features/Icon (3).svg"
+              alt="icon"
+              class="w-[32px] h-[27.92px]"
+            />
+            <h6 class="featureH6">24/7 Support</h6>
+            <p class="featurePragraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div class="featureDiv">
+            <img
+              src="./public/images/features/Icon (4).svg"
+              alt="icon"
+              class="w-[32px] h-[27.92px]"
+            />
+            <h6 class="featureH6">Quick Delivery</h6>
+            <p class="featurePragraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div class="featureDiv">
+            <img
+              src="./public/images/features/Icon (5).svg"
+              alt="icon"
+              class="w-[32px] h-[27.92px]"
+            />
+            <h6 class="featureH6">Hands-on approach</h6>
+            <p class="featurePragraph">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Features -->
+
+      <!-- Testimonials -->
+      <div
+        class="flex flex-col items-center xl:flex-row space-y-12 lg:space-y-0 lg:space-x-28 px-4 py-8 sm:px-16 sm:py-20 md:px-40 md:py-32 w-full bg-[#F9FAFD] dark:bg-[#b3d6e2]"
+      >
+        <div
+          class="flex flex-col space-y-4 w-full h-auto lg:h-[184px] items-center xl:items-baseline"
+        >
+          <div
+            class="heading-3 text-[#282938] w-full lg:w-[327px] lg:h-[112px] text-center xl:text-left"
+          >
+            What our clients say about us
+          </div>
+          <p
+            class="paragraph text-[#5b5b5b] w-full lg:h-[56px] text-center xl:text-left"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+          </p>
+        </div>
+
+        <div class="carousel w-full h-[40vh] ">
+          <div id="slide1" class="carousel-item relative w-full active-slide">
+            <div class="w-full m-auto h-full flex flex-col space-y-12">
+              <h5
+                class="sliderH5"
+              >
+                "The best agency we’ve worked with so far. They understand
+                ourable to add new features with a great focus."
+              </h5>
+              
+              <div class="sliderDiv">
+                <div class="avatar">
+                  <div class="w-[50px] rounded-full">
+                    <img src="./public/Images/testimonials/Mask Group.svg" />
+                  </div>
+                </div>
+                <div class="font-normal">
+                  <div class="text-[18px] font-[Poppins] dark:text-[#282938]">Jenny Wilson</div>
+                  <div class="text-[12px] font-[Poppins] dark:text-[#282938]">Vice President</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sliderButton">
+              <button onclick="prevSlide()" class="sliderNavigation">❮</button>
+              <button onclick="nextSlide()" class="sliderNavigation">❯</button>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full active-slide">
+            <div class="w-full m-auto h-full flex flex-col space-y-12">
+              <h5
+                class="sliderH5"
+              >
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis optio minima."
+              </h5>
+              <div class="sliderDiv">
+                <div class="avatar">
+                  <div class="w-[50px] rounded-full">
+                    <img src="./public/Images/testimonials/02.jpeg" />
+                  </div>
+                </div>
+                <div class="font-normal">
+                  <div class="text-[18px] font-[Poppins] dark:text-[#282938]">Jason Doe</div>
+                  <div class="text-[12px] font-[Poppins] dark:text-[#282938]">Managing Director</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sliderButton">
+              <button onclick="prevSlide()" class="sliderNavigation">❮</button>
+              <button onclick="nextSlide()" class="sliderNavigation">❯</button>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full active-slide">
+            <div class="w-full m-auto h-full flex flex-col space-y-12">
+              <h5
+                class="sliderH5"
+              >
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore odit enim reprehenderit praesentium error?"
+              </h5>
+              <div class="sliderDiv">
+                <div class="avatar">
+                  <div class="w-[50px] rounded-full">
+                    <img src="./public/Images/testimonials/03.jpeg" />
+                  </div>
+                </div>
+                <div class="font-normal">
+                  <div class="text-[18px] font-[Poppins] dark:text-[#282938]">Dave Wood</div>
+                  <div class="text-[12px] font-[Poppins] dark:text-[#282938]">General Manager</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sliderButton">
+              <button onclick="prevSlide()" class="sliderNavigation">❮</button>
+              <button onclick="nextSlide()" class="sliderNavigation">❯</button>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full active-slide">
+            <div class="w-full m-auto h-full flex flex-col space-y-12">
+              <div
+                class="sliderH5"
+              >
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla, id molestias quam quod earum natus nemo veniam ipsum fugit."
+              </div>
+              <div class="sliderDiv">
+                <div class="avatar">
+                  <div class="w-[50px] rounded-full">
+                    <img src="./public/Images/testimonials/04.jpeg" />
+                  </div>
+                </div>
+                <div class="font-normal">
+                  <div class="text-[18px] font-[Poppins] dark:text-[#282938]">Matt Demon</div>
+                  <div class="text-[12px] font-[Poppins] dark:text-[#282938]">Chairperson</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sliderButton">
+              <button onclick="prevSlide()" class="sliderNavigation">❮</button>
+              <button onclick="nextSlide()" class="sliderNavigation">❯</button>
+            </div>
+          </div>
+        </div>       
+      </div>
+
+      <!-- End Testimonials -->
+
+      <!-- FAQ -->
+      <div
+        class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-5 w-full h-fit lg:h-fit px-0 sm:px-6 xl:px-40 py-32"
+      >
+        <div
+          class="flex flex-col space-y-4 w-full lg:w-[50%] h-auto lg:h-[160px]"
+        >
+          <div
+            class="w-full lg:w-[320px] h-auto lg:h-[112px] heading-3 lightDark text-center lg:text-left"
+          >
+            Frequently asked questions
+          </div>
+          <a
+            href="./contact_us.html"
+            class="w-full lg:w-[220px] h-auto lg:h-[32px] font-[Poppins] lightDark text-[#2405F2] dark:text-[#FCD980] hover:font-bold text-[18px] leading-8 text-center lg:text-left hover-effect_2"
+            >Contact us for more info</a
+          >
+        </div>
+
+        <div class="flex flex-col space-y-8 w-full h-auto lg:h-fit">
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">01</span> How much time does it take?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">02</span> What is your class naming
+              convention?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">03</span> How do you communicate?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">04</span> I have a bigger project. Can you
+              handle it?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full bg-[#ECECF1]" />
+
+          <div class="faqDiv_1">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title heading-6 lightDark">
+              <span class="faqSpan">05</span>What is your class naming
+              convention?
+            </div>
+            <div class="collapse-content h-fit">
+              <p class="faqParagraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End FAQ -->
+
+      <!-- Contact Form -->
+      <div class="w-full h-fit pb-32 px-4 md:px-16 xl:px-40">
+        <div class="flex flex-col lg:flex-row w-full h-auto lg:h-[691px]">
+          <div
+            class="w-full lg:w-1/2 h-[350px] lg:h-[691px] flex justify-center bg-cover bg-center bg-[url('/public/images/Contact_Form/woman-writing-on-paper-3228878.png')] relative"
+          >
+            <div class="w-full h-full absolute bg-[#1C1E5380]"></div>
+            <div
+              class="flex flex-col space-y-6 pt-12 md:pt-24 px-4 md:px-0 w-full xl:w-[464px] h-[225px] lg:h-[335px] absolute"
+            >
+              <h1
+                class="heading-1 text-[#FFFFFF] w-full xl:w-[464px] h-auto lg:h-[225px] text-xl md:text-3xl lg:text-4xl text-center xl:text-left"
+              >
+                Building stellar websites for early startups
+              </h1>
+              <p
+                class="paragraph text-[#FFFFFF] w-full xl:w-[464px] h-auto lg:h-[85px] text-sm md:text-base lg:text-lg text-center xl:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full lg:w-1/2 bg-[#1C1E53] flex justify-center px-4 md:px-16 lg:px-24 pt-12 lg:pt-24 h-[580px] lg:h-full"
+          >
+            <div class="text-white w-full lg:w-[432px]">
+              <div
+                class="heading-5 mb-4 w-full h-[48px] text-lg md:text-xl lg:text-2xl text-center xl:text-left"
+              >
+                Send inquiry
+              </div>
+              <p
+                class="mb-10 paragraph w-full h-auto text-sm md:text-base lg:text-lg text-center xl:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+              <form>
+                <input
+                  class="formInput_1"
+                  type="text"
+                  placeholder="Your Name"
+                />
+                <input class="formInput_1" type="email" placeholder="Email" />
+                <input
+                  class="formInput_1"
+                  type="text"
+                  placeholder="Paste your Figma design URL"
+                />
+                <button
+                  class="w-full bg-[#FCD980] text-[#1B1C2B] py-3 rounded-full button_text hover:bg-yellow-500 hover-effect"
+                >
+                  Send an Inquiry
+                </button>
+              </form>
+              <div class="w-full h-[32px] flex justify-center">
+                <a
+                  href="./contact_us.html"
+                  class="mt-10 font-[Poppins] text-sm md:text-[18px] text-white flex flex-row items-center justify-center space-x-4 hover-effect"
+                >
+                  <div>Get in touch with us</div>
+                  <img
+                    src="./public/images/Contact_Form/Arrow 2 (1).svg"
+                    alt="arrow"
+                    class="w-6"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Form -->
+
+      <!-- Blog -->
+      <div class="w-full h-fit pb-32 px-4 md:px-16 lg:px-40">
+        <div class="flex flex-col w-full space-y-16 h-auto">
+          <div class="heading-2 lightDark">Our blog</div>
+          <div
+            class="flex flex-col lg:flex-row lg:space-x-6 space-y-16 lg:space-y-0 justify-between h-fit"
+          >
+            <div class="flex flex-col space-y-4 w-full lg:w-[30%] h-auto">
+              <img
+                src="./public/images/Blog/01.png"
+                alt=""
+                class="w-full h-[285px] mb-6 hover-effect"
+              />
+              <div class="blogParagraph">19 Jan 2022</div>
+              <h6 class="blogH6">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="blogParagraph">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a href="#" class="linkStyle">
+                <div class="readMoreStyle">Read More</div>
+                <img src="./public/images/Blog/Arrow 1 (1).svg" alt="" class="dark:hidden"/>
+                <img src="./public/images/our_work/Arrow 2 (2).svg" alt="" class="hidden dark:block" />                
+              </a>
+            </div>
+            <div class="flex flex-col space-y-4 w-full lg:w-[30%] h-auto">
+              <img
+                src="./public/images/Blog/02.png"
+                alt=""
+                class="w-full h-[285px] mb-6 hover-effect"
+              />
+              <div class="blogParagraph">19 Jan 2022</div>
+              <h6 class="blogH6">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="blogParagraph">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a href="#" class="linkStyle">
+                <div class="readMoreStyle">Read More</div>
+                <img src="./public/images/Blog/Arrow 1 (1).svg" alt="" class="dark:hidden"/>
+                <img src="./public/images/our_work/Arrow 2 (2).svg" alt="" class="hidden dark:block" /> 
+              </a>
+            </div>
+            <div class="flex flex-col space-y-4 w-full lg:w-[30%] h-auto">
+              <img
+                src="./public/images/Blog/03.png"
+                alt=""
+                class="w-full h-[285px] mb-6 hover-effect"
+              />
+              <div class="blogParagraph">19 Jan 2022</div>
+              <h6 class="blogH6">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h6>
+              <p class="blogParagraph">
+                See how pivoting to Webflow changed one person’s sales strategy
+                and allowed him to attract
+              </p>
+              <a href="#" class="linkStyle">
+                <div class="readMoreStyle">Read More</div>
+                <img src="./public/images/Blog/Arrow 1 (1).svg" alt="" class="dark:hidden"/>
+                <img src="./public/images/our_work/Arrow 2 (2).svg" alt="" class="hidden dark:block" /> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Blog -->
+
+      <!-- Footer -->
+      <footer class="w-full h-fit flex flex-col">
+        <div
+          class="flex flex-col w-full h-fit pt-12 xl:pt-24 px-6 xl:px-40 bg-[#1C1E53]"
+        >
+          <div
+            class="w-full h-auto flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-[260px] items-start justify-between"
+          >
+            <div class="w-full md:w-[400px] flex flex-col space-y-6">
+              <img
+                src="./public/images/header/nav/Logo.svg"
+                alt="Logo"
+                class="w-40 h-8"
+              />
+              <p class="paragraph w-full lg:w-[300px] xl:w-[399px] text-white">
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+            </div>
+            <div
+              class="w-full lg:w-[400px] flex flex-col space-y-4 md:space-y-[14px] justify-between"
+            >
+              <h2 class="heading-2 text-white">Lets Talk!</h2>
+              <p class="paragraph w-full lg:w-[399px] text-[#C9CBDA]">
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div class="flex flex-row space-x-6 md:space-x-[27px] items-end">
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Facebook/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Twitter/Negative.svg "
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Instagram/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/LinkedIn/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[517px] bg-[#FCD980] mt-8 md:mt-4">
+            <div
+              class="w-full h-auto flex flex-col md:flex-row px-6 md:px-[37px] py-4 space-y-4 md:space-y-0 md:space-x-10"
+            >
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Email me at
+                </div>
+                <p class="paragraph text-[#282938]">contact@website.com</p>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Call us
+                </div>
+                <p class="paragraph text-[#282938]">0927 6277 28525</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[92px] flex flex-col space-y-2 lg:space-y-0 lg:flex-row items-center px-6 xl:px-40 py-2 lg:py-0 md:justify-between"
+        >
+          <p
+            class="hidden lg:block paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+          <div class="flex flex-row space-x-6 md:space-x-7 mt-2 md:mt-0">
+            <a href="./index.html" class="menu_style">Home</a>
+            <a href="./about_us.html" class="menu_style">About us</a>
+            <a href="./features" class="menu_style">Features</a>
+            <a href="./price.html" class="menu_style">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_style">FAQ</a>
+            <a href="./blog_page.html" class="menu_style">Blog</a>
+          </div>
+          <p
+            class="lg:hidden paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+      </footer>
+
+      <!-- End Footer -->
+    </div>
+  </body>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenClose = document.getElementById("menu-close-open");
+
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+
+      if (!mobileMenu.classList.contains("hidden")) {
+        menuOpenClose.textContent = "Close";
+      } else {
+        menuOpenClose.textContent = "Menu";
+      }
+    });
+  </script>
+
+  <script>
+    let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.add('hidden');
+    if (i === index) {
+      slide.classList.remove('hidden');
+    }
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// اسلاید اول نمایش داده می‌شود
+showSlide(currentSlide);
+
+  </script>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <!-- Header -->
+
+      <header class="w-full h-fit bg-tintBlue">
+        <div
+          class="w-full spaceLeftRight h-[92px] flex flex-row justify-between"
+        >
+          <img
+            src="./public/images/header/nav/Logo.svg"
+            alt="Logo"
+            class="w-[122px] h-[24.71px] mt-8 md:mt-[28.04px] hover-effect cursor-pointer"
+          />
+
+          <nav
+            class="hidden md:flex w-auto ml-auto h-[29.91px] mt-[32.04px] space-x-3 md:space-x-6 lg:space-x-7 xl:space-x-8"
+          >
+            <a href="./index.html" class="menu_text-2">Home</a>
+            <a href="./about_us.html" class="menu_text-2">About us</a>
+            <a href="./features" class="menu_text-2">Features</a>
+            <a href="./price.html" class="menu_text-2">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_text-2 hidden sm:block"
+              >FAQ</a
+            >
+            <a href="./blog_page.html" class="menu_text-2 block">Blog</a>
+          </nav>
+
+          <a
+            href="./contact_us.html"
+            class="hidden md:flex md:w-[145px] lg:w-[165px] xl:w-[185px] h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] xl:h-[60px] mt-4 ml-4 sm:ml-[20px] md:ml-[30px] lg:ml-[40px] xl:ml-[50px] border-2 border-[#F4F6FC33] rounded-full bg-inherit items-center justify-center hover:border-[#FFFFFF] menu_text-1"
+            >Contact us</a
+          >
+
+          <!-- Hamburger Icon for mobile screens -->
+          <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <label
+              class="btn btn-circle swap swap-rotate bg-inherit border-white"
+            >
+              <!-- this hidden checkbox controls the state -->
+              <input id="hamburger-btn" type="checkbox" />
+
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                />
+              </svg>
+
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
+            </label>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div>
+
+          <!-- <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <button
+              id="hamburger-btn"
+              class="btn btn-ghost btn-circle transform transition-transform duration-200 ease-in-out"
+            >
+              <img
+                id="menu-icon"
+                src="./public/images/header/menu-icon.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </button>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div> -->
+        </div>
+      </header>
+      <nav
+        id="mobile-menu"
+        class="hidden flex-col space-y-2 px-8 pb-4 bg-tintBlue md:hidden"
+      >
+        <a href="./index.html" class="headerMenuStyle text-white">
+          <div>Home</div>
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./about_us.html" class="headerMenuStyle">
+          About us
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./features" class="headerMenuStyle">
+          Features
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./price.html" class="headerMenuStyle">
+          Pricing
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./privacy_policy.html" class="headerMenuStyle">
+          FAQ
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./blog_page.html" class="headerMenuStyle">
+          Blog
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a
+          href="./contact_us.html"
+          class="headerMenuStyle font-[Poppins] font-semibold text-[#1B1C2B] mt-4 px-4 border-[2px] w-fit bg-[#FCD980] hover:bg-tintBlue border-[#8d851b] hover:border-red-500"
+        >
+          Contact us</a
+        >
+      </nav>
+      <!-- End Header -->
+
+      <!-- Privacy Policy -->
+      <div
+        class="w-full h-auto py-16 sm:py-24 lg:py-32 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-[380px] flex flex-col space-y-8 sm:space-y-12 lg:space-y-16 items-center"
+      >
+        <div
+          class="w-full h-fit flex flex-col items-center space-y-2 sm:space-y-4"
+        >
+          <h2 class="heading-2 lightDark h-12 sm:h-16">Privacy Policy</h2>
+          <p
+            class="paragraph w-full sm:w-[400px] md:w-[500px] lg:w-[562px] text-center lightDark opacity-70"
+          >
+            When you’re ready to go beyond prototyping in Figma, Webflow’s ready
+            to help you bring your
+          </p>
+        </div>
+        <div
+          class="flex flex-col w-full sm:w-[600px] md:w-[720px] lg:w-[840px] h-auto space-y-4 sm:space-y-6"
+        >
+          <h3 class="w-full h-[48px] sm:h-[56px] heading-3 lightDark">
+            Lorem ipsum dolor.
+          </h3>
+          <p class="w-full h-auto paragraph lightDark opacity-70">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+            <span
+              ><a href="#" class="text-[#2405F2] dark:"
+                >Excepteur sint occaecat</a
+              ></span
+            >
+            cupidatat non proident.
+          </p>
+          <p class="w-full h-auto paragraph lightDark opacity-70">
+            Sunt in culpa qui officia deserunt mollit anim id est laborum. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <h3 class="w-full h-auto heading-3 lightDark">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h3>
+          <p class="w-full h-auto paragraph lightDark opacity-70">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat
+            <span><a href="#" class="text-[#2405F2]">cupidatat</a></span> non
+            proident. Dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </p>
+
+          <div class="flex flex-col w-full h-fit space-y-2 sm:space-y-3">
+            <div class="flex flex-row space-x-2 items-center">
+              <img
+                src="./public/images/Privacy-Policy/Ellipse 224.svg"
+                class="w-[5px] h-[5px]"
+                alt=""
+              />
+              <p class="w-full h-fit paragraph lightDark opacity-70">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+              </p>
+            </div>
+            <div class="flex flex-row space-x-2 items-center">
+              <img
+                src="./public/images/Privacy-Policy/Ellipse 224.svg"
+                class="w-[5px] h-[5px]"
+                alt=""
+              />
+              <p class="w-full h-fit paragraph lightDark opacity-70">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+              </p>
+            </div>
+            <div class="flex flex-row space-x-2 items-center">
+              <img
+                src="./public/images/Privacy-Policy/Ellipse 224.svg"
+                class="w-[5px] h-[5px]"
+                alt=""
+              />
+              <p class="w-full h-fit paragraph lightDark opacity-70">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+              </p>
+            </div>
+          </div>
+          <p class="w-full h-auto paragraph lightDark opacity-70">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+          </p>
+        </div>
+      </div>
+
+      <!-- End Privacy Policy -->
+
+      <!-- Footer -->
+      <footer class="w-full h-fit flex flex-col">
+        <div
+          class="flex flex-col w-full h-fit pt-12 xl:pt-24 px-6 xl:px-40 bg-[#1C1E53]"
+        >
+          <div
+            class="w-full h-auto flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-[260px] items-start justify-between"
+          >
+            <div class="w-full md:w-[400px] flex flex-col space-y-6">
+              <img
+                src="./public/images/header/nav/Logo.svg"
+                alt="Logo"
+                class="w-40 h-8"
+              />
+              <p class="paragraph w-full lg:w-[300px] xl:w-[399px] text-white">
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+            </div>
+            <div
+              class="w-full lg:w-[400px] flex flex-col space-y-4 md:space-y-[14px] justify-between"
+            >
+              <h2 class="heading-2 text-white">Lets Talk!</h2>
+              <p class="paragraph w-full lg:w-[399px] text-[#C9CBDA]">
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div class="flex flex-row space-x-6 md:space-x-[27px] items-end">
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Facebook/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Twitter/Negative.svg "
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Instagram/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/LinkedIn/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[517px] bg-[#FCD980] mt-8 md:mt-4">
+            <div
+              class="w-full h-auto flex flex-col md:flex-row px-6 md:px-[37px] py-4 space-y-4 md:space-y-0 md:space-x-10"
+            >
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Email me at
+                </div>
+                <p class="paragraph text-[#282938]">contact@website.com</p>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Call us
+                </div>
+                <p class="paragraph text-[#282938]">0927 6277 28525</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[92px] flex flex-col space-y-2 lg:space-y-0 lg:flex-row items-center px-6 xl:px-40 py-2 lg:py-0 md:justify-between"
+        >
+          <p
+            class="hidden lg:block paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+          <div class="flex flex-row space-x-6 md:space-x-7 mt-2 md:mt-0">
+            <a href="./index.html" class="menu_style">Home</a>
+            <a href="./about_us.html" class="menu_style">About us</a>
+            <a href="./features" class="menu_style">Features</a>
+            <a href="./price.html" class="menu_style">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_style">FAQ</a>
+            <a href="./blog_page.html" class="menu_style">Blog</a>
+          </div>
+          <p
+            class="lg:hidden paragraph lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+      </footer>
+
+      <!-- End Footer -->
+    </div>
+  </body>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenClose = document.getElementById("menu-close-open");
+    const menuIcon = document.getElementById("menu-icon");
+
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+
+      if (!mobileMenu.classList.contains("hidden")) {
+        menuOpenClose.textContent = "Close";
+        menuIcon.src = "./public/images/header/close-icon.svg";
+        hamburgerBtn.classList.add("rotate-90");
+      } else {
+        menuOpenClose.textContent = "Menu";
+        menuIcon.src = "./public/images/header/menu-icon.svg";
+        hamburgerBtn.classList.remove("rotate-90");
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+
+      <header class="w-full h-fit bg-tintBlue">
+        <div
+          class="w-full spaceLeftRight h-[92px] flex flex-row justify-between"
+        >
+          <img
+            src="./public/images/header/nav/Logo.svg"
+            alt="Logo"
+            class="w-[122px] h-[24.71px] mt-8 md:mt-[28.04px] hover-effect cursor-pointer"
+          />
+
+          <nav
+            class="hidden md:flex w-auto ml-auto h-[29.91px] mt-[32.04px] space-x-3 md:space-x-6 lg:space-x-7 xl:space-x-8"
+          >
+            <a href="./index.html" class="menu_text-2">Home</a>
+            <a href="./about_us.html" class="menu_text-2">About us</a>
+            <a href="./features" class="menu_text-2">Features</a>
+            <a href="./price.html" class="menu_text-2">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_text-2 hidden sm:block"
+              >FAQ</a
+            >
+            <a href="./blog_page.html" class="menu_text-2 block">Blog</a>
+          </nav>
+
+          <a
+            href="./contact_us.html"
+            class="hidden md:flex md:w-[145px] lg:w-[165px] xl:w-[185px] h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] xl:h-[60px] mt-4 ml-4 sm:ml-[20px] md:ml-[30px] lg:ml-[40px] xl:ml-[50px] border-2 border-[#F4F6FC33] rounded-full bg-inherit items-center justify-center hover:border-[#FFFFFF] menu_text-1"
+            >Contact us</a
+          >
+
+          <!-- Hamburger Icon for mobile screens -->
+          <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <label
+              class="btn btn-circle swap swap-rotate bg-inherit border-white"
+            >
+              <!-- this hidden checkbox controls the state -->
+              <input id="hamburger-btn" type="checkbox" />
+
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                />
+              </svg>
+
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
+            </label>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div>
+
+          <!-- <div class="md:hidden flex items-center px-2.5 sm:px-9 space-x-4">
+            <button
+              id="hamburger-btn"
+              class="btn btn-ghost btn-circle transform transition-transform duration-200 ease-in-out"
+            >
+              <img
+                id="menu-icon"
+                src="./public/images/header/menu-icon.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </button>
+            <h3
+              id="menu-close-open"
+              class="text-white button_text hidden sm:flex"
+            >
+              Menu
+            </h3>
+          </div> -->
+        </div>
+      </header>
+      <nav
+        id="mobile-menu"
+        class="hidden flex-col space-y-2 px-8 pb-4 bg-tintBlue md:hidden"
+      >
+        <a href="./index.html" class="headerMenuStyle text-white">
+          <div>Home</div>
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./about_us.html" class="headerMenuStyle">
+          About us
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./features" class="headerMenuStyle">
+          Features
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./price.html" class="headerMenuStyle">
+          Pricing
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./privacy_policy.html" class="headerMenuStyle">
+          FAQ
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a href="./blog_page.html" class="headerMenuStyle">
+          Blog
+          <img src="./public/images/header/flesh.svg" alt="" />
+        </a>
+        <a
+          href="./contact_us.html"
+          class="headerMenuStyle font-[Poppins] font-semibold text-[#1B1C2B] mt-4 px-4 border-[2px] w-fit bg-[#FCD980] hover:bg-tintBlue border-[#8d851b] hover:border-red-500"
+        >
+          Contact us</a
+        >
+      </nav>
+      <!-- End Header -->
+
+
+      <!-- About Us Hero -->
+       <div class="w-full px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-16 sm:py-24 md:py-32 h-fit flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 dark:text-white">
+        <div class="w-full lg:w-[45%] h-fit flex flex-col space-y-2 text-center md:text-left">
+          <p class="font-[Poppins] text-[18px] lightDark text-center lg:text-left">About us</p>
+          <h1 class="heading-1 lightDark text-center lg:text-left">Our designs solve problems</h1>
+          <p class="w-full xl:w-[484px] paragraph lightDark opacity-70 pt-8 text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <img src="./public/images/about_us/01.png" alt="" class="w-full lg:w-[45%] h-auto hover-effect">
+      </div>
+      
+      <!-- End About Us Hero -->
+
+       <!-- who we are -->
+       <div class="px-6 sm:px-10 md:px-20 lg:px-30 2xl:px-40 flex flex-col sm:pb-24 md:pb-32  ">
+        <div class="w-full  p-6 sm:p-10 lg:p-16  h-fit flex flex-col lg:flex-row justify-between bg-[#F4F5F5] dark:bg-[#386775] shadow-sm space-y-8 md:space-y-0 ">
+          <div class="aboutUsDiv">
+            <p class="paragraph lightDark">Who we are</p>
+            <h3 class="heading-3 lightDark">Goal focussed</h3>
+            <p class="aboutUsP_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="aboutUsDiv pt-6">
+            <p class="paragraph lightDark"></p>
+            <h3 class="heading-3 lightDark">Continuous improvement</h3>
+            <p class="aboutUsP_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <img src="./public/images/about_us/02.png" alt="" class="w-full hover-effect ">
+      </div>
+            
+       <!--End who we are -->
+
+       <!-- Process -->
+       <div class="px-6 sm:px-10 md:px-20  2xl:px-40 flex flex-col py-16 sm:pb-24 md:pb-32 items-center space-y-8 sm:space-y-10 md:space-y-12">
+        <h2 class="heading-2 lightDark text-center">The process we follow</h2>
+        <div class="flex flex-col xl:flex-row space-x-0 xl:space-x-14 space-y-8 xl:space-y-0">
+
+          <div class="w-full flex flex-col xl:flex md:flex-row md:space-x-8 lg:space-x-14 justify-between items-center md:items-start space-y-8 md:space-y-0">
+            <div class="aboutUsDiv_2">
+              <div class="aboutUsDiv_3">
+                <img src="./public/images/about_us/Circle.svg" alt="" class="w-6 h-6">
+                <img src="./public/images/about_us/Line Indicator.svg" alt="" class="aboutUsImg">
+              </div>
+              <h6 class="aboutUsH6">Planning</h6>
+              <p class="aboutUsP_2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+        
+            <div class="aboutUsDiv_2">
+              <div class="aboutUsDiv_3">
+                <img src="./public/images/about_us/Circle.svg" alt="" class="w-6 h-6">
+                <img src="./public/images/about_us/Line Indicator.svg" alt="" class="aboutUsImg">
+              </div>
+              <h6 class="aboutUsH6">Conception</h6>
+              <p class="aboutUsP_2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+          </div>
+  
+          <div class="w-full flex flex-col md:flex-row md:space-x-8 lg:space-x-14 justify-between items-center md:items-start space-y-8 md:space-y-0">   
+            <div class="aboutUsDiv_2">
+              <div class="aboutUsDiv_3">
+                <img src="./public/images/about_us/Circle.svg" alt="" class="w-6 h-6">
+                <img src="./public/images/about_us/Line Indicator.svg" alt="" class="aboutUsImg">
+              </div>
+              <h6 class="aboutUsH6">Design</h6>
+              <p class="aboutUsP_2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+        
+            <div class="aboutUsDiv_2">
+              <div class="aboutUsDiv_3">
+                <img src="./public/images/about_us/Circle.svg" alt="" class="w-6 h-6">
+                <img src="./public/images/about_us/Line Indicator.svg" alt="" class="aboutUsImg">
+  
+              </div>
+              <h6 class="aboutUsH6">Development</h6>
+              <p class="aboutUsP_2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>    
+      
+       <!-- End Process -->
+
+       <!-- Our Mission -->
+       <div class="w-full h-fit bg-[#EEF4FA] dark:bg-[#386775] px-6 sm:px-10 md:px-20 lg:px-32 2xl:px-40 py-16 sm:py-24 md:py-32 flex flex-col space-y-12 sm:space-y-16 md:space-y-24">
+        <div class="w-full flex flex-col lg:flex-row space-y-8 lg:space-y-0 md:space-x-8 lg:space-x-36 items-center justify-between">
+          <div class="aboutUsDiv_4">
+            <p class="aboutUsP_3">Our Mission</p>
+            <h3 class="aboutUsH3">Inspire, Innovate, Share</h3>
+            <p class="aboutUsP_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <img src="./public/images/about_us/03.jpg" alt="" class="w-full md:w-auto hover-effect">
+        </div>
+        
+        <div class="w-full flex flex-col-reverse lg:flex-row gap-y-8 lg:space-y-0 md:space-x-8 lg:space-x-30 2xl:space-x-36 items-center justify-between">
+          <img src="./public/images/about_us/04.png" alt="" class="block w-full md:w-auto hover-effect">
+          <div class="aboutUsDiv_4">
+            <p class="aboutUsP_3">Our Vision</p>
+            <h3 class="aboutUsH3">Laser focus</h3>
+            <p class="aboutUsP_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+      
+       <!-- End Our Mission -->
+
+       <!-- Benefits -->
+       <div class="w-full h-fit px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-16 sm:py-24 md:py-32 flex flex-col space-y-12 items-center">
+        <h2 class="w-full md:w-[630px] h-fit heading-2 lightDark text-center">The benefits of working with us</h2>
+        
+        <div class="w-full h-fit flex flex-col xl:flex-row justify-between space-y-8 xl:space-y-0 xl:space-x-8">
+          <div class="benefitDiv">
+            <img src="./public/images/about_us/05.svg" alt="" class="benefitImg">
+            <h6 class="benefitH6">Customize with ease</h6>
+            <p class="benefitP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+          </div>
+          
+          <div class="benefitDiv">
+            <img src="./public/images/about_us/06.svg" alt="" class="benefitImg">
+            <h6 class="benefitH6">Perfectly Responsive</h6>
+            <p class="benefitP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+          </div>
+          
+          <div class="benefitDiv">
+            <img src="./public/images/about_us/07.svg" alt="" class="benefitImg">
+            <h6 class="benefitH6">Friendly Support</h6>
+            <p class="benefitP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+          </div>
+        </div>
+        
+        <div class="flex flex-col xl:flex-row w-full h-fit space-y-8 xl:space-y-0 xl:space-x-[90px] items-center justify-between">
+          <div class="flex flex-col text-center xl:text-left pl-2">
+            <h3 class="heading-3 lightDark">100.000+</h3>
+            <p class="paragraph lightDark opacity-70">Finsweet Users</p>
+          </div>
+          
+          <div class="grid grid-rows-2 md:grid-rows-1 grid-cols-3 md:grid-cols-5 gap-8 w-full">
+
+            <img src="./public/images/about_us/08.svg" alt="">
+            <img src="./public/images/about_us/09.svg" alt="">
+            <img src="./public/images/about_us/10.svg" alt="">
+            <img src="./public/images/about_us/11.svg" alt="">
+            <img src="./public/images/about_us/12.svg" alt="">
+          </div>
+        </div>
+      </div>
+      
+       <!-- End Benefits -->
+
+       <!-- Our Team -->
+       <div class="w-full h-fit px-4 sm:px-10 md:px-5 2xl:px-40 py-16 sm:py-24 md:py-32 bg-[#F4F6FC] dark:bg-[#386775] flex flex-col space-y-12 items-center ">
+        <h2 class="heading-2 text-center lightDark">Meet our team</h2>
+        <div class="w-full h-auto flex flex-col 2xl:flex-row justify-center items-center space-y-8 2xl:space-y-0 2xl:space-x-4">
+
+          <div class="w-full 2xl:w-1/2 h-auto flex flex-row justify-evenly space-x-4">
+            <div class="w-full sm:w-[45%]  flex flex-col py-10 px-8 md:px-16 bg-white items-center dark:bg-[#71b0c4] hover-effect">
+              <div class="relative group w-24 h-24 md:w-48 md:h-48 hover-effect_2">
+                <img src="./public/images/about_us/13.png" alt="Circular Image" class="w-full h-full object-cover rounded-full ">            
+                <div class="flex justify-center absolute inset-0 bg-gradient-to-t from-[#5239FA] to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 ">
+                  <button class="w-[40px] md:w-fit absolute bottom-2 md:bottom-4  xl:bottom-7 opacity-0 group-hover:opacity-100 transition-opacity duration-500 hover-effect_2 cursor-pointer" onclick="my_modal_1.showModal()">                 
+                    <img src="./public/images/about_us/Socials.svg" alt="" class="">                                                     
+                 </button>
+                 <dialog id="my_modal_1" class="modal">    
+                   <div class="modal-box">
+                     <h3 class="text-lg font-bold pb-4 heading-3">John Smith</h3>
+                    <a href="https://www.facebook.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Facebook/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Facebook.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">John Smith's Facebook Profile</p>
+                    </a>
+                    <a href="https://x.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Twitter/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Twitter.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">John Smith's Twitter Profile</p>
+                    </a>
+                    <a href="https://www.linkedin.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/LinkedIn/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Linkdin.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">John Smith's Linkdin Profile</p>
+                    </a>
+                     <div class="modal-action">
+                       <form method="dialog">
+                         <!-- if there is a button in form, it will close the modal -->
+                         <button class="btn">Close</button>
+                       </form>
+                     </div>
+                   </div>
+                 </dialog>
+                </div>
+                
+              </div>
+              <h6 class="w-full text-center pt-6 md:pt-4 lg:pt-[30px] heading-6 lightDark">John Smith</h6>
+              <p class="w-full text-center paragraph lightDark opacity-70">CEO</p>
+            </div>
+            <div class="w-full sm:w-[45%]  flex flex-col py-10 px-8  bg-white dark:bg-[#71b0c4] items-center hover-effect ">
+              <div class="relative group w-24 h-24 md:w-48 md:h-48 hover-effect_2">
+                <img src="./public/images/about_us/14.png" alt="Circular Image" class="w-full h-full object-cover rounded-full">
+                <div class="flex justify-center absolute group inset-0 bg-gradient-to-t from-[#5239FA] to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 ">
+                  <button class="w-[40px] md:w-fit absolute bottom-2 md:bottom-4  xl:bottom-7 opacity-0 group-hover:opacity-100 transition-opacity duration-500 hover-effect_2 cursor-pointer" onclick="my_modal_2.showModal()">                 
+                    <img src="./public/images/about_us/Socials.svg" alt="" class="">                                                     
+                 </button>
+                 <dialog id="my_modal_2" class="modal">    
+                   <div class="modal-box">
+                    <h3 class="text-lg font-bold pb-4 heading-3">Simon Adams</h3>
+                    <a href="https://www.facebook.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Facebook/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Facebook.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Simon Adams's Facebook Profile</p>
+                    </a>
+                    <a href="https://x.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Twitter/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Twitter.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Simon Adams's Twitter Profile</p>
+                    </a>
+                    <a href="https://www.linkedin.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/LinkedIn/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Linkdin.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Simon Adams's Linkdin Profile</p>
+                    </a>
+                     <div class="modal-action">
+                       <form method="dialog">
+                         <!-- if there is a button in form, it will close the modal -->
+                         <button class="btn">Close</button>
+                       </form>
+                     </div>
+                   </div>
+                 </dialog>
+                </div>
+              </div>
+              <h6 class="w-full text-center pt-6 md:pt-4 lg:pt-[30px] heading-6 lightDark">Simon Adams</h6>
+              <p class="w-full text-center paragraph lightDark opacity-70">CTO</p>
+            </div>
+          </div>
+          
+          <div class="w-full 2xl:w-1/2 h-auto flex flex-row justify-evenly space-x-4">
+            <div class="w-full sm:w-[45%] flex flex-col py-10 px-8 md:px-16 bg-white dark:bg-[#71b0c4] items-center hover-effect">
+              <div class="relative group w-24 h-24 md:w-48 md:h-48 hover-effect_2">
+                <img src="./public/images/about_us/15.png" alt="Circular Image" class="w-full h-full object-cover rounded-full"> 
+                <div class="flex justify-center absolute group inset-0 bg-gradient-to-t from-[#5239FA] to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <button class="w-[40px] md:w-fit absolute bottom-2 md:bottom-4  xl:bottom-7 opacity-0 group-hover:opacity-100 transition-opacity duration-500 hover-effect_2 cursor-pointer" onclick="my_modal_3.showModal()">                 
+                    <img src="./public/images/about_us/Socials.svg" alt="" class="">                                                     
+                 </button>
+                 <dialog id="my_modal_3" class="modal">    
+                   <div class="modal-box">
+                    <h3 class="text-lg font-bold pb-4 heading-3">Paul Jones</h3>
+                    <a href="https://www.facebook.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Facebook/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Facebook.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Paul Jones's Facebook Profile</p>
+                    </a>
+                    <a href="https://x.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Twitter/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Twitter.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Paul Jones's Twitter Profile</p>
+                    </a>
+                    <a href="https://www.linkedin.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/LinkedIn/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Linkdin.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Paul Jones's Linkdin Profile</p>
+                    </a>
+                     <div class="modal-action">
+                       <form method="dialog">
+                         <!-- if there is a button in form, it will close the modal -->
+                         <button class="btn">Close</button>
+                       </form>
+                     </div>
+                   </div>
+                 </dialog>
+                </div>
+              </div>
+              <h6 class="w-full text-center pt-6 md:pt-4 lg:pt-[30px] heading-6 lightDark">Paul Jones</h6>
+              <p class="w-full text-center paragraph lightDark opacity-70">Design Lead</p>
+            </div>
+            <div class="w-full sm:w-[45%]  flex flex-col py-10 px-8 md:px-16 bg-white dark:bg-[#71b0c4] items-center hover-effect">
+              <div class="relative group w-24 h-24  md:w-48 md:h-48 hover-effect_2">
+                <img src="./public/images/about_us/16.png" alt="Circular Image" class="w-full h-full object-cover rounded-full">  
+                <div class="flex justify-center absolute group inset-0 bg-gradient-to-t from-[#5239FA] to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 ">
+                  <button class="w-[40px] md:w-fit absolute bottom-2 md:bottom-4  xl:bottom-7 opacity-0 group-hover:opacity-100 transition-opacity duration-500 hover-effect_2 cursor-pointer" onclick="my_modal_4.showModal()">                 
+                     <img src="./public/images/about_us/Socials.svg" alt="" class="">                                                     
+                  </button>
+                  <dialog id="my_modal_4" class="modal">    
+                    <div class="modal-box">
+                      <h3 class="text-lg font-bold pb-4 heading-3">Sara Hardin</h3>
+                    <a href="https://www.facebook.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Facebook/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Facebook.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Sara Hardin's Facebook Profile</p>
+                    </a>
+                    <a href="https://x.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/Twitter/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Twitter.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Sara Hardin's Twitter Profile</p>
+                    </a>
+                    <a href="https://www.linkedin.com" class="flex flex-row space-x-3 hover-effect_2">
+                      <img src="./public/images/Footer/LinkedIn/Negative.svg" alt="" class="hidden dark:flex">
+                      <img src="./public/images/work/Linkdin.svg" alt="" class="flex dark:hidden">
+                      <p class="py-2 paragraph">Sara Hardin's Linkdin Profile</p>
+                    </a>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn">Close</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+                </div>
+              </div>
+              <h6 class="w-full text-center pt-6 md:pt-4 lg:pt-[30px] heading-6 lightDark">Sara Hardin</h6>
+              <p class="w-full text-center paragraph lightDark opacity-70">Project Manager</p>
+            </div>
+          </div>
+          </div>
+          
+      </div>
+      <!-- End Our Team -->
+
+      <!-- Footer -->
+      <footer class="w-full h-fit flex flex-col">
+        <div
+          class="flex flex-col w-full h-fit pt-12 xl:pt-24 px-6 xl:px-40 bg-[#1C1E53]"
+        >
+          <div
+            class="w-full h-auto flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-[260px] items-start justify-between"
+          >
+            <div class="w-full md:w-[400px] flex flex-col space-y-6">
+              <img
+                src="./public/images/header/nav/Logo.svg"
+                alt="Logo"
+                class="w-40 h-8"
+              />
+              <p class="paragraph w-full lg:w-[300px] xl:w-[399px] text-white">
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+            </div>
+            <div
+              class="w-full lg:w-[400px] flex flex-col space-y-4 md:space-y-[14px] justify-between"
+            >
+              <h2 class="heading-2 text-white">Lets Talk!</h2>
+              <p class="paragraph w-full lg:w-[399px] text-[#C9CBDA]">
+                We are always open to discuss your project, improve your online
+                presence and help with your UX/UI design challenges.
+              </p>
+              <div class="flex flex-row space-x-6 md:space-x-[27px] items-end">
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Facebook/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Twitter/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/Instagram/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./public/images/Footer/LinkedIn/Negative.svg"
+                    alt=""
+                    class="socialMediaHover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[517px] bg-[#FCD980] mt-8 md:mt-4">
+            <div
+              class="w-full h-auto flex flex-col md:flex-row px-6 md:px-[37px] py-4 space-y-4 md:space-y-0 md:space-x-10"
+            >
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Email me at
+                </div>
+                <p class="paragraph text-[#282938]">contact@website.com</p>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div
+                  class="font-[Poppins] text-[18px] leading-8 font-semibold text-[#282938]"
+                >
+                  Call us
+                </div>
+                <p class="paragraph text-[#282938]">0927 6277 28525</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[92px] flex flex-col space-y-2 lg:space-y-0 lg:flex-row items-center px-6 xl:px-40 py-2 lg:py-0 md:justify-between"
+        >
+          <p
+            class="hidden lg:block paragraph  lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+          <div
+            class="flex flex-row space-x-6 md:space-x-7 mt-2 md:mt-0"
+          >
+            <a href="./index.html" class="menu_style">Home</a>
+            <a href="./about_us.html" class="menu_style">About us</a>
+            <a href="./features" class="menu_style">Features</a>
+            <a href="./price.html" class="menu_style">Pricing</a>
+            <a href="./privacy_policy.html" class="menu_style">FAQ</a>
+            <a href="./blog_page.html" class="menu_style">Blog</a>
+          </div>
+          <p
+            class="lg:hidden paragraph  lightDark w-full md:w-[241px] font-semibold text-center md:text-left"
+          >
+            Copyright 2022, Finsweet.com
+          </p>
+        </div>
+      </footer>
+
+      <!-- End Footer -->
+    </div>
+  </body>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenClose = document.getElementById("menu-close-open");
+    const menuIcon = document.getElementById("menu-icon");
+
+    hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+
+        if (!mobileMenu.classList.contains("hidden")) {
+            menuOpenClose.textContent = "Close";
+            menuIcon.src = "./public/images/header/close-icon.svg"; 
+            hamburgerBtn.classList.add("rotate-90"); 
+        } else {
+            menuOpenClose.textContent = "Menu";
+            menuIcon.src = "./public/images/header/menu-icon.svg"; 
+            hamburgerBtn.classList.remove("rotate-90"); 
+        }
+    });
+</script>
+</html>
