@@ -2052,6 +2052,11 @@ details.collapse summary::-webkit-details-marker {
   }
 }
 
+main {
+  margin-top: 92px;
+  /* فاصله به اندازه ارتفاع هدر */
+}
+
 .menu_text-1 {
   transition: transform 0.1s ease;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -3785,6 +3790,14 @@ details.faqDiv_1 summary::-webkit-details-marker {
   visibility: collapse;
 }
 
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -3793,12 +3806,52 @@ details.faqDiv_1 summary::-webkit-details-marker {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
 
 .bottom-2 {
   bottom: 0.5rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[92\] {
+  top: 92;
+}
+
+.top-\[92px\] {
+  top: 92px;
+}
+
+.top-\[0px\] {
+  top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .col-span-1 {
@@ -3867,6 +3920,10 @@ details.faqDiv_1 summary::-webkit-details-marker {
 
 .mt-\[32\.04px\] {
   margin-top: 32.04px;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .block {
@@ -4366,6 +4423,18 @@ details.faqDiv_1 summary::-webkit-details-marker {
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-20 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5rem * var(--tw-space-x-reverse));
+  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -4476,8 +4545,8 @@ details.faqDiv_1 summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/public\/images\/Contact_Form\/woman-writing-on-paper-3228878\.png\'\)\] {
-  background-image: url('/public/images/Contact_Form/woman-writing-on-paper-3228878.png');
+.bg-\[url\(\'\.\.\/images\/Contact_Form\/01\.png\'\)\] {
+  background-image: url('../images/Contact_Form/01.png');
 }
 
 .bg-gradient-to-br {
@@ -4486,42 +4555,6 @@ details.faqDiv_1 summary::-webkit-details-marker {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/public\/images\/Contact_Form\/woman-writing-on-paper-3228878\.png\'\)\] {
-  background-image: url('./public/images/Contact_Form/woman-writing-on-paper-3228878.png');
-}
-
-.bg-\[url\(\'\/public\/images\/Contact_Form\/01\'\)\] {
-  background-image: url('/public/images/Contact_Form/01');
-}
-
-.bg-\[url\(\'\/public\/images\/Contact_Form\/01\.\'\)\] {
-  background-image: url('/public/images/Contact_Form/01.');
-}
-
-.bg-\[url\(\'\/public\/images\/Contact_Form\/01\.png\'\)\] {
-  background-image: url('/public/images/Contact_Form/01.png');
-}
-
-.bg-\[url\(\'\/images\/Contact_Form\/01\.png\'\)\] {
-  background-image: url('/images/Contact_Form/01.png');
-}
-
-.bg-\[url\(\'\.\/\/images\/Contact_Form\/01\.png\'\)\] {
-  background-image: url('.//images/Contact_Form/01.png');
-}
-
-.bg-\[url\(\'\.\/\62D\639\630\/images\/Contact_Form\/01\.png\'\)\] {
-  background-image: url('./حعذ/images/Contact_Form/01.png');
-}
-
-.bg-\[url\(\'\.\/images\/Contact_Form\/01\.png\'\)\] {
-  background-image: url('./images/Contact_Form/01.png');
-}
-
-.bg-\[url\(\'\.\.\/images\/Contact_Form\/01\.png\'\)\] {
-  background-image: url('../images/Contact_Form/01.png');
 }
 
 .from-\[\#5239FA\] {
@@ -4550,10 +4583,6 @@ details.faqDiv_1 summary::-webkit-details-marker {
 
 .bg-center {
   background-position: center;
-}
-
-.fill-current {
-  fill: currentColor;
 }
 
 .fill-white {
@@ -4735,6 +4764,18 @@ details.faqDiv_1 summary::-webkit-details-marker {
 
 .pt-\[44px\] {
   padding-top: 44px;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-60 {
+  padding-top: 15rem;
 }
 
 .text-center {
@@ -5404,6 +5445,11 @@ details.faqDiv_1 summary::-webkit-details-marker {
     padding-bottom: 8rem;
   }
 
+  .md\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .md\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -5430,6 +5476,14 @@ details.faqDiv_1 summary::-webkit-details-marker {
 
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .md\:pb-40 {
+    padding-bottom: 10rem;
   }
 
   .md\:text-left {
@@ -5658,6 +5712,12 @@ details.faqDiv_1 summary::-webkit-details-marker {
     flex-direction: row-reverse;
   }
 
+  @media (min-width: 1024px) {
+    .lg\:lg\:flex-row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
   .lg\:items-start {
     align-items: flex-start;
   }
@@ -5822,6 +5882,14 @@ details.faqDiv_1 summary::-webkit-details-marker {
 
   .lg\:pt-\[30px\] {
     padding-top: 30px;
+  }
+
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .lg\:text-left {

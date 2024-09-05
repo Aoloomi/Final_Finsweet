@@ -17,6 +17,10 @@
     @apply w-full h-fit flex flex-col dark:bg-[#8889ac];
   }
 
+  main {
+    margin-top: 92px; /* فاصله به اندازه ارتفاع هدر */
+  }
+
   .menu_text-1 {
     @apply font-[Poppins] text-[#ffffff] leading-[28px] font-medium text-[16px] hover-effect;
   }
