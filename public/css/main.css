@@ -4778,6 +4778,10 @@ details.faqDiv_1 summary::-webkit-details-marker {
   padding-top: 15rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
